@@ -11,9 +11,9 @@ class TestApp(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
 
         self.assertEqual(
-            response.data.decode("utf-8"),
-            "Hello, Jenkins Pipeline!"
-        )
+    response.data.decode("utf-8"),
+    "This is an incorrect response!"
+)
 
 if __name__ == "__main__":
     unittest.main()
